@@ -20,17 +20,6 @@ body{
     display: flex;
 }
 
-.btn-comprar button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #09a511;
-    border: 0;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: .2s;
-}
-
 h2.titulo{
     color: #fff;
     font-size: 38px;
@@ -75,7 +64,7 @@ header nav ul li{
     padding: 0 40px;
 }
 
-.btn-comprar button:hover{
+.btn-comprar button:hover, form .btn-enviar input:hover{
     box-shadow: 0px 0px 8px #09a511;
     transform: scale(1.05);
 }
@@ -140,7 +129,6 @@ section.especialidades .flex{
 
 .especialidades .especialidades-box:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 10px #ffffff69;
 }
 
 .especialidades .especialidades-box i{
@@ -156,6 +144,7 @@ section.especialidades .flex{
 /* ESTILO DO SOBRE */
 section.sobre{
     padding: 80px 4%;
+    box-shadow: 0 0 10px #ffffff69;
 }
 
 section.sobre .flex{
@@ -176,3 +165,128 @@ section.sobre .flex{
     margin: 20px 0;
     text-align: justify;
 }
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #09a511;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+/* ATUALIZAÇÕES */
+section.atualizações{
+    padding: 80px 4%;
+}
+
+section.atualizções .flex{
+    gap: 60px;
+}
+
+.atualizações .atualizações-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 45px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.atualizações .atualizações-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ffffff69;
+}
+
+.atualizações .atualizações-box h4{
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+/* ESTILO DO FORMULÁRIO DE CONTATO */
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #313131;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 300px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #09a511;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* ESTILO DO RODAPÉ */
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid #09a511 ;
+}
+
+.btn-comprar button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #09a511;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+footer .line-footer p i{
+    color: #09a511;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+}
+
+
+
