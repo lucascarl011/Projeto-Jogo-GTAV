@@ -83,6 +83,7 @@ section.topo-do-site .flex{
 .topo-do-site h1{
     color: #fff;
     font-size: 42px;
+    line-height: 40px;
 }
 
 .topo-do-site h1 span{  /* txt-topo-site */
@@ -287,6 +288,89 @@ footer .line-footer p i{
 
 footer .line-footer p a{
     color: #fff;
+}
+
+@media screen and (max-width: 1194px){
+    /* CLASSES GERAIS */ 
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop, .btn-comprar{
+        display: none;
+    }
+
+    /* topo do site*/
+
+    .interface .logo img{
+        width: 100%;
+    }
+
+    section.topo-do-site .flex{
+        gap: 40px;
+    }
+
+    section.topo-do-site{
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1{
+        font-size: 30px;
+        text-align: center;
+        line-height: 35px;
+    }
+
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+
+    /* ESPECIALIDADES */
+    section.especialidades{
+        padding: 40px 8%;
+    }
+
+    /* SOBRE */ 
+
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+    /* RODAPÉ */
+
+    footer .flex{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+
 }
 
 
