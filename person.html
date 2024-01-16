@@ -11,7 +11,10 @@
       <!-- BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <!-- FIM BOOTSTRAP ICONS -->
-      <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="menu.js" defer></script>
+
     <title>Personagens</title>
 </head>
 <body>
@@ -35,6 +38,26 @@
                     <button>COMPRAR AGORA</button>
                 </a>
             </div>
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile" >
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Visão Geral</a></li>
+                        <li><a href="person.html">Personagens/ Requisitos</a></li> 
+                        <li><a href="https://store.rockstargames.com/pt-BR/game/buy-gta-v?_gl=1*12lmi6o*_ga*MjAyNTQxMjI3Ny4xNzAyOTQ2NjE1*_ga_PJQ2JYZDQC*MTcwNDg1NTY5NC4xMy4xLjE3MDQ4NTczODguMC4wLjA.">Comprar agora</a></li>                 
+                    </ul>
+                </nav>
+
+            </div><!-- MENU MOBILE -->
+            <div class="overlay-menu" id="overlay-menu"></div>
         </div><!--interface-->
 
     </header>
@@ -56,8 +79,8 @@
                         </div>
                     </div><!--txt-topo-site-->
 
-                    <div class="img-topo-site-person"><!-- img-topo-site-->
-                        <img src="images/Grand-Theft-Auto-5-playable-characters.jpg" alt="personagens do jogo" width="700px">
+                    <div class="img-topo-site"><!-- img-topo-site-->
+                        <img src="images/Grand-Theft-Auto-5-playable-characters.jpg" alt="personagens do jogo" width="650px">
                     </div><!--img-topo-site-->
                 </div>
             </div>

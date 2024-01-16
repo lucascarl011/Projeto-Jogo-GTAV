@@ -50,7 +50,7 @@ header a{
 
 }
 
-header a:hover{
+header nav.menu-desktop a:hover{
     color: #fff;
     transform: scale(1.05);
 }
@@ -59,7 +59,7 @@ header nav ul{
     list-style-type: none;
 }
 
-header nav ul li{
+header nav.menu-desktop ul li{
     display: inline-block;
     padding: 0 40px;
 }
@@ -67,6 +67,69 @@ header nav ul li{
 .btn-comprar button:hover, form .btn-enviar input:hover{
     box-shadow: 0px 0px 8px #09a511;
     transform: scale(1.05);
+}
+
+/* ESTILO DO MENU MOBILE */
+.btn-abrir-menu i{
+    color: #09a511;
+    font-size: 40px;
+    cursor: pointer;
+}
+.menu-mobile{
+    background: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .btn-fechar i{
+    color: #09a511;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300px;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #09a511;
+    color: #000;
+}
+
+.overlay-menu{
+    background-color: #000000d2;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
 }
 
 /* ESTILO DO TOPO DO SITE */
@@ -290,7 +353,7 @@ footer .line-footer p a{
     color: #fff;
 }
 
-@media screen and (max-width: 1194px){
+@media screen and (max-width: 1194px){  /* RESPONSIVIDADE */
     /* CLASSES GERAIS */ 
     .topo-do-site .flex{
         flex-direction: column-reverse;
@@ -353,6 +416,12 @@ footer .line-footer p a{
 
     .img-sobre img{
         width: 100%;
+    }
+
+    /* ATUALIZAÇÕES */
+
+    section.atualizações {
+        padding: 80px 8%;
     }
 
     /* RODAPÉ */
